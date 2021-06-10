@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2{
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+#imageBackground {
+    background-image: url("../imgs/imageBackground1336x530.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: auto;
+    height: 530px;
+}
+
+.generalFormatting {
+    max-width: 1100px;
+    width: 81vw;
+    margin: 35px auto;
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+}
+
+#presentation {
+    margin-top: -300px;
+    padding: 23px 30px 23px 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "myPicture titleInformation titleInformation"
+    "myPicture  information information";
+}
+
+#myPicture{
+    grid-area: myPicture;
+}
+
+#titleInformation{
+    grid-area: titleInformation;
+}
+
+#information{
+   grid-area: information;
+   /* margin-top: -6.25rem; */
+   line-height: 1.6;
+}
+
+#about {
+    text-align: justify;
+    padding: 20px 33px 39px 48px;
+}
+
+#about h1{
+    margin-bottom: 30px;
+    margin-left: -15px;
+}
+
+#skills {
+    padding: 20px 30px 30px 30px;
+    height: 520px;
+}
+
+#skills h1,h2{
+    margin-left: 10px;
+}
+
+#formation {
+    height: 420px;
+}
+
+#professionalExperience {
+    height: 250px;
+}
+
+#portfolio {
+    height: 920px;
+}
+
+#freeCourses {
+    height: 600px;
+}
+
+footer {
+    width: 100vw;
+    height: 70px;
+    background-color: slategray;
+}

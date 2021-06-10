@@ -1,0 +1,49 @@
+@media (max-width: 540px) {
+    * {
+        font-size: 1rem;
+    }
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+    #imageBackground {
+        background-image: url("../imgs/imageBackground800x600.jpg");
+    }
+    .generalFormatting {
+        width: 95vw;
+    }
+    #myPicture>img {
+        position: absolute;
+        top: 150px;
+        left: 30%;
+        width: 150px;
+    }
+    #myPicture>img {
+        width: 150px;
+        border-radius: 50%;
+    }
+    #about {
+        padding: 20px 6px 30px 8px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 720px) {
+    #imageBackground {
+        background-image: url("../imgs/imageBackground720x1280.jpg");
+    }
+    #presentation {
+        grid-template-columns: repeat(auto-fit, minmax(340px, max-content));
+        grid-template-areas: none;
+    }
+    #presentation div {
+        margin-top: 30px;
+        grid-area: inherit;
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 430px) {
+    #imageBackground {
+        background-image: url("../imgs/imageBackground360x240.jpg");
+    }
+}
