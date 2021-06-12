@@ -11,7 +11,15 @@
 </head>
 
 <body>
-    <div id="imageBackground"></div>
+    <div id="imageBackground">
+     <picture>
+        <source media="(max-width:720px)" srcset="./resources/imgs/imageBackground640x345.jpg" >
+        <source> 
+        <source media="(max-width:1000px)" srcset="./resources/imgs/imageBackground1000x370.png" >
+        <source> 
+         <img src="./resources/imgs/imageBackground1920x550.png" alt="Flowers">
+     </picture>
+    </div>
     <div id="presentation" class="generalFormatting">
         <div id="myPicture">
             <img src="./resources/imgs/samuelGoulart.jpg" alt="" srcset="">
