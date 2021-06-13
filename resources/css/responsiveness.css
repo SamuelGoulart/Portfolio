@@ -10,9 +10,6 @@
     }
 }
 
-
-
-
 @media (max-width: 720px) {
     #presentation {
         grid-template-columns: repeat(auto-fit, minmax(340px, max-content));
@@ -44,7 +41,7 @@
         height: 450px;
     }
     #myPicture>img {
-        left: 30%;
+        left: 29%;
     }
     #about {
         padding: 20px 6px 30px 8px;
@@ -52,6 +49,12 @@
     }
     .generalFormatting {
         width: 95vw;
+    }
+    #skills {
+        padding: 20px 0px 30px 0px;
+    }
+    .progress-bar{
+        width: 90%;
     }
 }
 
