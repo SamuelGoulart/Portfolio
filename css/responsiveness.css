@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+    nav{
+        display: none;
+    }
     .generalFormatting {
         width: 90vw;
     }
@@ -12,10 +15,10 @@
     .formation {
         margin-left: 15px;
     }
-    .formation::before{
+    .formation::before {
         content: none;
     }
-    .marker{
+    .marker {
         display: none;
     }
     .line {
@@ -63,6 +66,11 @@
         padding: 20px 6px 30px 8px;
         text-align: center;
     }
+    #about span{
+        margin-left: -15px;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
     .generalFormatting {
         width: 95vw;
     }
@@ -71,5 +79,14 @@
     }
     .progress-bar {
         width: 90%;
+    }
+    #professionalExperience div {
+        margin: auto;
+    }
+    #portfolio {
+        padding: 20px 0px 30px 15px;
+    }
+    #spanRepositorio {
+        margin-top: 2px;
     }
 }

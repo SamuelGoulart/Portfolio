@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+#imageBackground {
+    height: 450px;
+    margin-left: 0px;
+}
+
+#imageBackground>picture>img {
+    width: 100vw;
+    z-index: -1;
+    max-height: 370px;
+    position: absolute;
+}
+
+.navSocialNetworks {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70px;
+    height: 256px;
+    position: fixed;
+    left: 0px;
+    top: 35vh;
+    border-radius: 0px 40px 40px 0px;
+    background-color: #06A763;
+    border: 1px solid black;
+}
+
+.navSocialNetworks>a {
+    margin-top: 25px;
+    margin: auto;
+}
+
+.navSocialNetworks>a:hover {
+    zoom: 1.2;
+}
+
+.generalFormatting {
+    max-width: 1100px;
+    width: 81vw;
+    margin: 35px auto;
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+}
+
+#presentation {
+    margin-top: -300px;
+    padding: 23px 30px 23px 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "myPicture titleInformation titleInformation" "myPicture  information information";
+}
+
+#myPicture {
+    grid-area: myPicture;
+}
+
+#titleInformation {
+    grid-area: titleInformation;
+}
+
+#information {
+    grid-area: information;
+    line-height: 1.6;
+}
+
+#titleInformation, #information {
+    margin-left: 10px;
+}
+
+#about {
+    text-align: justify;
+    padding: 20px 33px 30px 48px;
+}
+
+#about h1 {
+    margin-bottom: 30px;
+    margin-left: -15px;
+}
+
+#about p {
+    margin-bottom: 20px;
+}
+
+#btnDownloadCurriculo {
+    display: grid;
+    grid-template-columns: 50px 88px;
+    margin-top: 10px;
+    background-color: #06A763;
+    color: #fff;
+    padding: 13px 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: auto;
+}
+
+#btnDownloadCurriculo:hover {
+    background-color: #007738;
+}
+
+#about span {
+    margin-top: 3px;
+    width: 100px;
+}
+
+.navInternalLinks{
+    width: 1100px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+    color: white;
+    margin: auto;
+}
+
+.navActivate{
+    position: fixed;
+    top: 15px;
+    left: calc(50% - 550px);
+    border-radius: 25px;
+    transition: 2s;
+} 
+
+#skills {
+    padding: 20px 30px 30px 30px;
+}
+
+#skills p {
+    margin-top: 10px;
+}
+
+.softwareDevelopmentSkills, .hardwareAndNetworkingSkills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    margin: 0px 0px 30px 30px;
+    column-gap: 20px;
+}
+
+.softwareDevelopmentSkills, div, p, .hardwareAndNetworkingSkills, div, p {
+    margin-left: 5px;
+}
+
+.softwareDevelopmentSkills>div h2 {
+    margin: 20px 0px 10px 0px;
+}
+
+.progress-bar {
+    max-width: 480px;
+    width: 98%;
+    height: 13px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    display: flex;
+}
+
+.progress-bar::before {
+    content: "";
+    width: calc(var(--progress) * 1%);
+    background-color: #06A763;
+    border-radius: 8px;
+}
+
+/* SEÇÃO DA FORMAÇÃO */
+
+#formation {
+    padding: 20px 50px 30px 50px;
+}
+
+#formation>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 19rem;
+}
+
+#formation h1 {
+    margin-left: -20px;
+}
+
+.formation {
+    max-width: 350px;
+    max-height: 100px;
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.formation:before {
+    content: "";
+    position: absolute;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #06A763;
+    border-top: 15px solid transparent;
+    margin: -1.9rem 0rem 0rem 9.7rem;
+}
+
+.formation:nth-child(1)::before, .formation:nth-child(2)::before {
+    margin: 6.1rem 0rem 0rem -1.3rem;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid #06A763;
+}
+
+.marker {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border: 6px solid #06A763;
+    margin: 115px 0px 0px 158px;
+    z-index: 2;
+}
+
+.line {
+    border-bottom: 1px dashed #000;
+    position: relative;
+    padding-bottom: 12px;
+    margin: 24px 0px 20px 0px;
+    position: relative;
+    top: -175px;
+}
+
+#invertedFormation {
+    margin-left: 325px;
+    margin-top: 80px;
+}
+
+#invertedFormation .marker {
+    margin-top: -50px;
+}
+
+/* FIM DA FORMAÇÃO */
+
+#professionalExperience {
+    height: 250px;
+}
+
+#professionalExperience h1 {
+    margin: 20px 0px 30px 30px;
+}
+
+#professionalExperience div {
+    display: table;
+    max-width: 540px;
+    width: 95%;
+    height: 96px;
+    max-height: 96px;
+    margin-left: 55px;
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+}
+
+#professionalExperience>div p {
+    padding: 0px 30px 0px 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#portfolio {
+    padding: 20px 30px 30px 30px;
+}
+
+#portfolio>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+
+.cardPortfolio {
+    max-width: 320px;
+    width: 80vw;
+    height: 380px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+}
+
+.cardPortfolio:hover {
+    border: 3px solid #06A763;
+    padding: 17px;
+}
+
+.cardPortfolio>h1 {
+    margin-bottom: 30px;
+}
+
+.cardPortfolio a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 7px 0px 0px 10px;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #06A763;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#spanRepositorio {
+    margin-top: 4px;
+    width: 90px;
+}
+
+.cardPortfolio a:hover {
+    background-color: #007738;
+}
+
+.category {
+    display: inline-block;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #06A763;
+    padding: 1px 10px 1px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#freeCourses {
+    height: 600px;
+    padding: 20px 30px;
+}
+
+.cardFreeCourses {
+    width: 450px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 2px #06A763 solid;
+    padding: 15px 30px 15px 20px;
+}
+
+footer {
+    width: 100vw;
+    height: 70px;
+    margin-bottom: 10px;
+    display: table;
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+}
+
+footer div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer h1 {
+    text-align: center;
+    font-size: 1rem;
+}

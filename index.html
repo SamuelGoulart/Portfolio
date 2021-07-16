@@ -4,25 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/css/style.css">
-    <link rel="stylesheet" href="./resources/css/responsiveness.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsiveness.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Samuel Goulart</title>
 </head>
 
 <body>
     <div id="imageBackground">
         <picture>
-            <source media="(max-width:720px)" srcset="./resources/imgs/imageBackground640x345.jpg">
+            <source media="(max-width:720px)" srcset="./img/imageBackground640x345.jpg">
             <source>
-            <source media="(max-width:1000px)" srcset="./resources/imgs/imageBackground1000x370.png">
+            <source media="(max-width:1000px)" srcset="./img/imageBackground1000x370.png">
             <source>
-            <img src="./resources/imgs/imageBackground1920x550.png" alt="Flowers">
+            <img src="./img/imageBackground1920x550.png" alt="Flowers">
         </picture>
     </div>
+    <nav class="navSocialNetworks" >
+        <a href="https://www.linkedin.com/in/samuelgoulart/" target="_black">
+            <img src="./img/icon_linkedin.svg" alt="" srcset="">
+        </a>
+        <a href="http://">
+            <img src="./img/icon_gmail.svg" alt="">
+        </a>
+        <a href="https://github.com/SamuelGoulart" target="_black">
+            <img src="./img/icon_GuitHub.svg" alt="">
+        </a>
+        <a href=" https://wa.me/+5511968387212">
+            <img src="./img/icon_whatsapp.svg" alt="">
+        </a>
+    </nav>
     <div id="presentation" class="generalFormatting">
         <div id="myPicture">
-            <img src="./resources/imgs/samuelGoulart.jpg" alt="" srcset="">
+            <img src="./img/samuelGoulart.jpg" alt="" srcset="">
         </div>
         <div id="titleInformation">
             <h1>Olá, meu nome é Samuel Goulart</h1>
@@ -44,14 +58,104 @@
             implementar todo conhecimento que adquirir e estou adquirindo através dos estudos constantes. Estou em busca
             de crescimento profissional. Atualmente estou fazendo o curso de Técnico de desenvolvimento de sistemas, no
             período das 7:30 até 11:30.</p>
+        <a id="btnDownloadCurriculo" href="./pdf/CV - Samuel Almeida Goulart.pdf" target="_black">
+            <img src="./img/download.svg" alt="icone de download" srcset="">
+            <span>Currículo</span>
+        </a>
+
     </section>
+    <nav class="navInternalLinks" >
+
+    </nav>
     <section id="skills" class="generalFormatting">
         <h1>Minhas Habilidades Profissionais</h1>
-        <h2>Desenvolvimento de software</h2>
-        <div id="softwareDevelopmentSkills">
+        <div class="softwareDevelopmentSkills">
+            <div>
+                <h2>Desenvolvimento Front-end</h2>
+                <div>
+                    <p>HTML5 e CSS</p>
+                    <div class="progress-bar" style="--progress: 80;"></div>
+                </div>
+                <div>
+                    <p>JavaScript puro</p>
+                    <div class="progress-bar" style="--progress: 85;"></div>
+                </div>
+                <div>
+                    <p>PWA</p>
+                    <div class="progress-bar" style="--progress: 30;"></div>
+                </div>
+                <div>
+                    <p>Bootstrap</p>
+                    <div class="progress-bar" style="--progress: 45;"></div>
+                </div>
+                <div>
+                    <p>Figma</p>
+                    <div class="progress-bar" style="--progress: 25;"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Banco de dados</h2>
+                <div>
+                    <p>MySQL</p>
+                    <div class="progress-bar" style="--progress: 70;"></div>
+                </div>
+                <h2>Desenvolvimento Moblie</h2>
+                <div>
+                    <p>XML</p>
+                    <div class="progress-bar" style="--progress: 60;"></div>
+                </div>
+                <div>
+                    <p>Kotlin</p>
+                    <div class="progress-bar" style="--progress: 40;"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Desenvolvimento Back-end</h2>
+                <div>
+                    <p>PHP - PDO - MVC - API REST</p>
+                    <div class="progress-bar" style="--progress: 80;"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Versionamento de código</h2>
+                <div>
+                    <p>Git e GuitHub</p>
+                    <div class="progress-bar" style="--progress: 60;"></div>
+                </div>
+            </div>
         </div>
-        <h2>Hardware e Redes</h2>
-        <div id="hardwareAndNetworkingSkills">
+
+        <div class="hardwareAndNetworkingSkills">
+            <div>
+                <h2>Hardware</h2>
+                <div>
+                    <p>Conhecimento das peças</p>
+                    <div class="progress-bar" style="--progress: 90;"></div>
+                </div>
+                <div>
+                    <p>Montagem e desmontagem</p>
+                    <div class="progress-bar" style="--progress: 90;"></div>
+                </div>
+                <div>
+                    <p>Instalação de sistemas operacionais</p>
+                    <div class="progress-bar" style="--progress: 90;"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Redes</h2>
+                <div>
+                    <p>Conhecimento dispositivos de redes</p>
+                    <div class="progress-bar" style="--progress: 90;"></div>
+                </div>
+                <div>
+                    <p>Windows server 2016</p>
+                    <div class="progress-bar" style="--progress: 30;"></div>
+                </div>
+                <div>
+                    <p>Topologia de redes</p>
+                    <div class="progress-bar" style="--progress: 30;"></div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="formation" class="generalFormatting">
@@ -65,7 +169,7 @@
                 </div>
                 <div class="year">2017 - 2019</div>
             </div>
-         
+
             <div class="formation">
                 <div class="marker"></div>
                 <div class="content">
@@ -76,7 +180,7 @@
                 <div class="year">2020 - até agora</div>
             </div>
         </div>
-        <div class="formation" id="invertedFormation" >
+        <div class="formation" id="invertedFormation">
             <div class="marker"></div>
             <div>
                 <h4>Escola SENAC “Lapa Tito”</h4>
@@ -88,19 +192,77 @@
         <div class="line"></div>
     </section>
     <section id="professionalExperience" class="generalFormatting">
-
+        <h1>Experiência profissional</h1>
+        <div>
+            <p>Em busca do primeiro emprego</p>
+        </div>
     </section>
     <section id="portfolio" class="generalFormatting">
+        <h1>Portfólio</h1>
+        <div>
+            <div class="cardPortfolio">
+                <h1>iCatalogo-api</h1>
+                <p>O projeto iCatalogo-api é um projeto desenvolvido durante o curso de técnico em desenvolvimento de
+                    sistemas, para a aprendizagem da construção de API-REST, sem utilização de frameworks.</p>
 
+                <a href="https://github.com/SamuelGoulart/icatalogo-api" target="_blank">
+                    <img style="width: 25px; height: 25px;" src="./img/icon_GuitHub.svg" alt="" srcset="">
+                    <span id="spanRepositorio">Repositório</span>
+                </a>
+                <span class="category">PHP</span>
+                <span class="category">MVC</span>
+                <span class="category">API-REST</span>
+                <span class="category">PDO</span>
+                <span class="category">MySQL</span>
+            </div>
+            <div class="cardPortfolio">
+                <h1>FastParking-api</h1>
+                <p>O projeto FastParking-api é um projeto, desenvolvido em integração entre as matérias de back-end e front-end  do curso de técnico em desenvolvimento de sistemas.</p>
+
+                <a href="https://github.com/SamuelGoulart/FastParking-API-REST-PHP" target="_blank">
+                    <img style="width: 25px; height: 25px;" src="./img/icon_GuitHub.svg" alt="" srcset="">
+                    <span id="spanRepositorio">Repositório</span>
+                </a>
+                <span class="category">PHP</span>
+                <span class="category">MVC</span>
+                <span class="category">API-REST</span>
+                <span class="category">PDO</span>
+                <span class="category">HTML</span>
+                <span class="category">CSS</span>
+                <span class="category">JavaScript</span>
+                <span class="category">MySQL</span>
+
+            </div>
+            <div class="cardPortfolio">
+                <h1>Estacionamento</h1>
+                <p>Este projeto, foi desenvolvido para fazer o controle de um estacionamento, usando como banco de dados o LocalStorange do navegador, para guardar as informações.</p>
+
+                <a href="https://github.com/SamuelGoulart/FastParking-API-REST-PHP" target="_blank">
+                    <img style="width: 25px; height: 25px;" src="./img/icon_GuitHub.svg" alt="" srcset="">
+                    <span id="spanRepositorio">Repositório</span>
+                </a>
+                <span class="category">HTML</span>
+                <span class="category">CSS</span>
+                <span class="category">JavaScript</span>
+
+            </div>
+        </div>
     </section>
     <section id="freeCourses" class="generalFormatting">
-
+        <h1>Cursos livres</h1>
+        <div>
+            <div class="cardFreeCourses">
+                <figure>
+                    <img src="./resources/imgs/senai.png" alt="">
+                </figure>
+                <p>Privacidade e proteção de dados - 4H</p>
+            </div>
+        </div>
     </section>
     <footer>
-
     </footer>
 
-    <script src="./resources/js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
