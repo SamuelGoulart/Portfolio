@@ -1,9 +1,16 @@
 @media (max-width: 1200px) {
-    nav{
+    .navSocialNetworks{
         display: none;
     }
     .generalFormatting {
         width: 90vw;
+    }
+    .navInternalLinks{
+        width: 86vw;
+        left: calc(50% - 43vw);
+    }
+    .navInternalLinks > ul a:nth-child(1){
+        display: none;
     }
     #myPicture>img {
         width: 25vw;
@@ -40,17 +47,22 @@
         grid-area: inherit;
         margin-left: -50px;
     }
+    .navInternalLinks{
+        width: 95vw;
+        left: calc(50% - 48vw);
+        font-size: 0.9rem;
+    }
     #myPicture>img {
         position: absolute;
         top: 75px;
-        left: 40%;
+        left: calc(50% - 80px);
         width: 150px;
         border-radius: 50%;
     }
 }
 
 @media (max-width: 540px) {
-    * {
+    body {
         font-size: 1rem;
     }
     h1, h2 {
@@ -59,9 +71,7 @@
     #imageBackground {
         height: 450px;
     }
-    #myPicture>img {
-        left: 29%;
-    }
+    
     #about {
         padding: 20px 6px 30px 8px;
         text-align: center;
@@ -73,6 +83,14 @@
     }
     .generalFormatting {
         width: 95vw;
+    }
+    .navInternalLinks{
+        padding: 15px 5px;
+        left: calc(50% - 47.5vw);
+        font-size: 0.9rem;
+    }
+    .navInternalLinks > ul a:nth-child(7){
+        display: none;
     }
     #skills {
         padding: 20px 0px 30px 0px;

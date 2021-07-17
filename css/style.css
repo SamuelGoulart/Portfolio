@@ -4,11 +4,17 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 h1, h2 {
     font-weight: normal;
     font-size: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
 }
 
 #imageBackground {
@@ -102,7 +108,6 @@ h1, h2 {
     width: 150px;
     height: 50px;
     border-radius: 5px;
-    text-decoration: none;
     margin: auto;
 }
 
@@ -115,22 +120,38 @@ h1, h2 {
     width: 100px;
 }
 
-.navInternalLinks{
-    width: 1100px;
-    height: 50px;
+.navInternalLinks {
+    max-width: 1080px;
+    width: 80vw;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 25px;
     background-color: white;
     box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
-    color: white;
+    color: black;
     margin: auto;
+    z-index: 3;
 }
 
-.navActivate{
+.navInternalLinks ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navInternalLinks a {
+    color: black;
+}
+
+.navInternalLinks a:nth-child(1) {
+    margin-right: 12%;
+}
+
+.navActivate {
     position: fixed;
     top: 15px;
-    left: calc(50% - 550px);
-    border-radius: 25px;
+    left: calc(50% - 540px);
     transition: 2s;
-} 
+}
 
 #skills {
     padding: 20px 30px 30px 30px;
@@ -273,6 +294,10 @@ h1, h2 {
     padding: 20px 30px 30px 30px;
 }
 
+#portfolio>h1 {
+    margin-bottom: 15px;
+}
+
 #portfolio>div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -281,13 +306,13 @@ h1, h2 {
 .cardPortfolio {
     max-width: 320px;
     width: 80vw;
-    height: 380px;
     padding: 20px;
     text-align: justify;
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+    justify-self: center;
 }
 
 .cardPortfolio:hover {
@@ -311,7 +336,6 @@ h1, h2 {
     border-radius: 5px;
     background-color: #06A763;
     color: #fff;
-    text-decoration: none;
     margin-bottom: 10px;
 }
 
@@ -335,22 +359,43 @@ h1, h2 {
 }
 
 #freeCourses {
-    height: 600px;
     padding: 20px 30px;
 }
 
-.cardFreeCourses {
-    width: 450px;
+#freeCourses>h1 {
+    margin-bottom: 15px;
+}
+
+#freeCourses>div {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    border: 2px #06A763 solid;
-    padding: 15px 30px 15px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.cardFreeCourses {
+    max-width: 470px;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 100px 3fr;
+    padding: 15px 4px 15px 20px;
+    margin: 15px 0px 15px 5px;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+}
+
+.cardFreeCourses:hover{
+    border: 1px solid #06A763;
+    border-radius: 25px;
+    transition: 1s;
+
+}
+
+.cardFreeCourses p {
+    line-height: 53px;
+    text-align: center;
 }
 
 footer {
     width: 100vw;
     height: 70px;
-    margin-bottom: 10px;
     display: table;
     background-color: white;
     box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
