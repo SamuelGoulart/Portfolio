@@ -92,7 +92,6 @@
     #imageBackground {
         height: 450px;
     }
-    
     #about {
         padding: 20px 6px 30px 8px;
         text-align: center;
@@ -116,14 +115,17 @@
     #skills {
         padding: 20px 0px 30px 0px;
     }
+    #skillsTitleNetworks{
+        margin-top: 30px;
+    }
     .progress-bar {
         width: 90%;
     }
     #professionalExperience div {
         margin: auto;
     }
-    #portfolio {
-        padding: 20px 0px 30px 15px;
+    #portfolio > div{
+        margin-left: 0px;
     }
     #spanRepositorio {
         margin-top: 2px;
@@ -134,6 +136,10 @@
     .cardFreeCourses {
         width: 89vw;
     }
+}
 
- 
+@media (max-width: 375px){
+    .cardFreeCourses {
+        width: 80vw;
+    }
 }
