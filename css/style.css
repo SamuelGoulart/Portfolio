@@ -36,10 +36,10 @@ a {
     height: 256px;
     position: fixed;
     left: 0px;
-    top: 35vh;
+    top: calc(50vh - 128px);
     border-radius: 0px 40px 40px 0px;
-    background-color: #06A763;
-    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
 }
 
 .navSocialNetworks>a {
@@ -197,51 +197,19 @@ a {
 
 #formation {
     padding: 20px 50px 30px 50px;
+    height: 420px;
 }
 
-#formation>div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    column-gap: 19rem;
+#formation>div{
+    margin-top: 30px;    
 }
 
-#formation h1 {
-    margin-left: -20px;
-}
-
-.formation {
+.cardFormation{
     max-width: 350px;
-    max-height: 100px;
-    background-color: white;
+    width: 80vw;
+    height: 100px;
+    margin: 0px 1px 1px 1px;
     box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
-    margin-top: 30px;
-    text-align: center;
-}
-
-.formation:before {
-    content: "";
-    position: absolute;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-bottom: 15px solid #06A763;
-    border-top: 15px solid transparent;
-    margin: -1.9rem 0rem 0rem 9.7rem;
-}
-
-.formation:nth-child(1)::before, .formation:nth-child(2)::before {
-    margin: 6.1rem 0rem 0rem -1.3rem;
-    border-bottom: 15px solid transparent;
-    border-top: 15px solid #06A763;
-}
-
-.marker {
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    background-color: white;
-    border: 6px solid #06A763;
-    margin: 115px 0px 0px 158px;
-    z-index: 2;
 }
 
 .line {
@@ -250,16 +218,7 @@ a {
     padding-bottom: 12px;
     margin: 24px 0px 20px 0px;
     position: relative;
-    top: -175px;
-}
-
-#invertedFormation {
-    margin-left: 325px;
-    margin-top: 80px;
-}
-
-#invertedFormation .marker {
-    margin-top: -50px;
+    top: 20px;
 }
 
 /* FIM DA FORMAÇÃO */
@@ -281,6 +240,10 @@ a {
     margin-left: 55px;
     background-color: white;
     box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+}
+
+#professionalExperience > div:hover{
+    border: 1px #06A763 solid;
 }
 
 #professionalExperience>div p {
@@ -306,7 +269,7 @@ a {
 .cardPortfolio {
     max-width: 320px;
     width: 80vw;
-    padding: 20px;
+    padding: 18px;
     text-align: justify;
     border-radius: 5px;
     margin-top: 10px;
@@ -372,7 +335,7 @@ a {
 
 .cardFreeCourses {
     max-width: 470px;
-    width: 90vw;
+    width: 40vw;
     display: grid;
     grid-template-columns: 100px 3fr;
     padding: 15px 4px 15px 20px;

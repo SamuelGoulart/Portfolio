@@ -15,27 +15,38 @@
     #myPicture>img {
         width: 25vw;
     }
-    #formation>div {
-        width: 85vw;
-        margin-left: -40px;
+    #formation > div{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 20px 1fr;
     }
-    .formation {
-        margin-left: 15px;
+    .line{
+        width: 320px;
+        top: 135px;
+        left: -120px;
+        transform: rotate(90deg);
     }
-    .formation::before {
-        content: none;
+    .cardPortfolio{
+        margin: 15px auto;
     }
-    .marker {
-        display: none;
+    .cardFreeCourses{
+        grid-template-columns: 68px 3fr;
+        padding-left: 5px;
+        margin: 7px auto;
     }
-    .line {
-        position: absolute;
+    .cardFreeCourses p {
+        line-height: normal;
+        padding-top: 8px;
     }
-    #invertedFormation {
-        margin-left: -24px !important;
-        margin-top: 30px;
+
+}
+
+@media (max-width: 870px){
+    .cardFreeCourses{
+        width: 70vw;
     }
 }
+
 
 @media (max-width: 720px) {
     #presentation {
@@ -59,6 +70,13 @@
         width: 150px;
         border-radius: 50%;
     }
+    #freeCourses{
+        padding: 20px 10px;
+    }
+
+    .cardFreeCourses{
+        width: 80vw;
+    }
 }
 
 @media (max-width: 540px) {
@@ -67,6 +85,9 @@
     }
     h1, h2 {
         font-size: 1.2rem;
+    }
+    .generalFormatting > h1{
+        text-align: center;
     }
     #imageBackground {
         height: 450px;
@@ -107,4 +128,12 @@
     #spanRepositorio {
         margin-top: 2px;
     }
+    #freeCourses > div{
+        margin-left: -12px;
+    }
+    .cardFreeCourses {
+        width: 89vw;
+    }
+
+ 
 }
