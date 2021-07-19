@@ -1,70 +1,89 @@
 @media (max-width: 1320px) {
-    #cards{
+    #cards {
         grid-template-columns: 350px 225px 350px;
     }
-
 }
+
 @media (max-width: 1200px) {
-    .navSocialNetworks{
+    .navSocialNetworks {
         display: none;
     }
     .generalFormatting {
         width: 90vw;
     }
-    .navInternalLinks{
+    .navInternalLinks {
         width: 86vw;
         left: calc(50% - 43vw);
     }
-    .navInternalLinks > ul a:nth-child(1){
+    .navInternalLinks>ul a:nth-child(1) {
         display: none;
     }
     #myPicture>img {
         width: 25vw;
     }
-    #formation > div{
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 60px 1fr;
-      grid-template-areas: "line card1 ."
-                           "line card2 ."
-                           "line card3 .";
+    #formation>div {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        grid-template-areas: "line card1 ." 
+                             "line date1 ."
+                             "line card2 ."
+                             "line date2 ." 
+                             "line card3 ."
+                             "line date3 .";
     }
     #professionalExperience {
         padding-bottom: 50px;
     }
-    #cards{
-        grid-template-rows: 1fr 1fr 1fr;
+    #cards {
+        grid-template-rows: 1fr 20px 1fr 20px 1fr 20px ;
         grid-template-columns: 10px 80vw;
-        row-gap: 20px;
+        row-gap: 10px;
         margin-left: 0px;
     }
     #card3 {
         margin-left: 0px;
     }
-    .line{
-        width: 395px;
+    .line {
+        width: 480px;
         top: -15px;
-        left: -155px;
+        left: -198px;
         transform: rotate(90deg);
     }
-    .square{
+    #date1{
+        grid-area: date1;
+        top: 0px;
+        left: 125px;
+    }
+    #date2{
+        grid-area: date2;
+        top: 0px;
+        left: 125px;
+    }
+    #date3{
+        grid-area: date3;
+        top: 0px;
+        left: 125px;
+    }
+    .triangle {
+        display: none;
+    }
+    .square {
         top: 45px;
         left: 20px;
     }
-
-    #square2{
+    #square2 {
         left: 20px;
-        top: 180px;
+        top: 201px;
     }
-
-    #square3{
+    #square3 {
         left: 20px;
-        top: 310px;
+        top: 360px;
     }
-    .cardPortfolio{
+    .cardPortfolio {
         margin: 15px auto;
     }
-    .cardFreeCourses{
+    .cardFreeCourses {
         grid-template-columns: 68px 3fr;
         padding-left: 5px;
         margin: 7px auto;
@@ -73,15 +92,13 @@
         line-height: normal;
         padding-top: 8px;
     }
-
 }
 
-@media (max-width: 870px){
-    .cardFreeCourses{
+@media (max-width: 870px) {
+    .cardFreeCourses {
         width: 70vw;
     }
 }
-
 
 @media (max-width: 720px) {
     #presentation {
@@ -93,7 +110,7 @@
         grid-area: inherit;
         margin-left: -50px;
     }
-    .navInternalLinks{
+    .navInternalLinks {
         width: 95vw;
         left: calc(50% - 48vw);
         font-size: 0.9rem;
@@ -105,11 +122,10 @@
         width: 150px;
         border-radius: 50%;
     }
-    #freeCourses{
+    #freeCourses {
         padding: 20px 10px;
     }
-
-    .cardFreeCourses{
+    .cardFreeCourses {
         width: 80vw;
     }
 }
@@ -121,7 +137,7 @@
     h1, h2 {
         font-size: 1.2rem;
     }
-    .generalFormatting > h1{
+    .generalFormatting>h1 {
         text-align: center;
     }
     #imageBackground {
@@ -131,7 +147,7 @@
         padding: 20px 6px 30px 8px;
         text-align: center;
     }
-    #about span{
+    #about span {
         margin-left: -15px;
         text-transform: uppercase;
         font-weight: bolder;
@@ -139,18 +155,18 @@
     .generalFormatting {
         width: 95vw;
     }
-    .navInternalLinks{
+    .navInternalLinks {
         padding: 15px 5px;
         left: calc(50% - 47.5vw);
         font-size: 0.9rem;
     }
-    .navInternalLinks > ul a:nth-child(7){
+    .navInternalLinks>ul a:nth-child(7) {
         display: none;
     }
     #skills {
         padding: 20px 0px 30px 0px;
     }
-    #skillsTitleNetworks{
+    #skillsTitleNetworks {
         margin-top: 30px;
     }
     .progress-bar {
@@ -159,30 +175,30 @@
     #formation {
         padding: 20px 0px 30px 0px;
     }
-    #formation > div{
+    #formation>div {
         grid-template-columns: 15px 1fr;
     }
-    .cardFormation{
+    .cardFormation {
         width: 86vw;
         margin-left: 10px !important;
     }
-    .cardFormation > h1{
+    .cardFormation>h1 {
         font-size: 1rem;
     }
-    .line{
-        width: 320px;
-        left: -143px;
+    .line {
+        width: 430px;
+        left: -198px;
     }
-    .square{
-        top: 30px;
+    .square {
+        top: 39px;
         left: -4px;
     }
-    #square2{
-        top: 135px;
+    #square2 {
+        top: 175px;
         left: -4px;
     }
-    #square3{
-        top: 245px;
+    #square3 {
+        top: 325px;
         left: -4px;
     }
     #professionalExperience div {
@@ -191,16 +207,16 @@
     #portfolio {
         padding: 20px 0px 30px 0px;
     }
-    #portfolio > div{
+    #portfolio>div {
         margin-left: 0px;
     }
     #spanRepositorio {
         margin-top: 2px;
     }
-    #freeCourses{
+    #freeCourses {
         padding: 20px 0px;
     }
-    #freeCourses > div{
+    #freeCourses>div {
         margin-left: -12px;
     }
     .cardFreeCourses {
@@ -209,19 +225,26 @@
 }
 
 @media (max-width: 390px) {
-    .line{
-        width: 370px;
-        left: -168px;
-    }
-    .square{
+    .square {
         top: 40px;
     }
-    #square2{
-        top: 160px;
+    #square2 {
+        top: 180px;
         left: -4px;
     }
-    #square3{
-        top: 285px;
+    #square3 {
+        top: 330px;
         left: -4px;
+    }
+    #date1 {
+        left: 115px;
+    }
+
+    #date2 {
+        left: 120px;
+    }
+
+    #date3 {
+        left: 112px;
     }
 }
