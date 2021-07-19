@@ -8,6 +8,19 @@
     .navSocialNetworks {
         display: none;
     }
+    .navSocialNetworksPresentation{
+        display: block;
+        width: 250px;
+        padding: 10px;
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+        margin: 15px 1px 1px 1px;
+
+    }
+    .navSocialNetworksPresentation a{
+        margin-left: 20px;
+    }
     .generalFormatting {
         width: 90vw;
     }
@@ -101,6 +114,10 @@
 }
 
 @media (max-width: 720px) {
+    .navSocialNetworksPresentation{
+        margin-top: 15px;
+        margin-left: calc(43vw - 125px);
+    }
     #presentation {
         grid-template-columns: repeat(auto-fit, minmax(340px, max-content));
         grid-template-areas: none;
@@ -152,6 +169,10 @@
         text-transform: uppercase;
         font-weight: bolder;
     }
+    .navActivate {
+        top: 92vh;
+    }
+
     .generalFormatting {
         width: 95vw;
     }
@@ -221,6 +242,9 @@
     }
     .cardFreeCourses {
         width: 89vw;
+    }
+    footer{
+        margin-bottom: 60px;
     }
 }
 
