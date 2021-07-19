@@ -1,3 +1,9 @@
+@media (max-width: 1320px) {
+    #cards{
+        grid-template-columns: 350px 225px 350px;
+    }
+
+}
 @media (max-width: 1200px) {
     .navSocialNetworks{
         display: none;
@@ -18,12 +24,23 @@
     #formation > div{
       margin-top: 30px;
       display: grid;
-      grid-template-columns: 20px 1fr;
+      grid-template-columns: 60px 1fr;
+      grid-template-areas: "line card1 ."
+                           "line card2 ."
+                           "line card3 .";
+    }
+    #cards{
+        grid-template-columns: 10px 80vw;
+        row-gap: 20px;
+        margin-left: 0px;
+    }
+    #card3 {
+        margin-left: 0px;
     }
     .line{
-        width: 320px;
-        top: 135px;
-        left: -120px;
+        width: 395px;
+        top: -15px;
+        left: -155px;
         transform: rotate(90deg);
     }
     .cardPortfolio{
@@ -81,7 +98,7 @@
 
 @media (max-width: 540px) {
     body {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     h1, h2 {
         font-size: 1.2rem;
@@ -121,6 +138,23 @@
     .progress-bar {
         width: 90%;
     }
+    #formation {
+        padding: 20px 0px 30px 0px;
+    }
+    #formation > div{
+        grid-template-columns: 10px 1fr;
+    }
+    .cardFormation{
+        width: 86vw;
+        margin-left: 10px !important;
+    }
+    .cardFormation > h1{
+        font-size: 1rem;
+    }
+    .line{
+        width: 320px;
+        left: -144px;
+    }
     #professionalExperience div {
         margin: auto;
     }
@@ -144,3 +178,9 @@
     }
 }
 
+@media (max-width: 390px) {
+    .line{
+        width: 370px;
+        left: -170px;
+    }
+}

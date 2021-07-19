@@ -196,20 +196,46 @@ a {
 /* SEÇÃO DA FORMAÇÃO */
 
 #formation {
-    padding: 20px 50px 30px 50px;
-    height: 420px;
+    padding: 20px 20px 30px 20px;
 }
 
 #formation>div{
     margin-top: 30px;    
 }
 
+#cards{
+    display: grid;
+    grid-template-columns: 350px 320px 350px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "card1 . card2"
+                         "line line line"
+                         ". card3 .";
+}
+
+#card1 {
+    grid-area: card1;
+}
+
+#card2 {
+    grid-area: card2;
+}
+
+#card3 {
+    grid-area: card3;
+    margin-left: -15px;
+}
+
 .cardFormation{
     max-width: 350px;
     width: 80vw;
-    height: 100px;
-    margin: 0px 1px 1px 1px;
+    margin: 1px 1px 1px 1px;
+    padding: 20px 0px 10px 0px;
     box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+    text-align: center;
+}
+
+.cardFormation > h1{
+    font-size: 1.1rem;
 }
 
 .line {
@@ -218,7 +244,8 @@ a {
     padding-bottom: 12px;
     margin: 24px 0px 20px 0px;
     position: relative;
-    top: 20px;
+    grid-area: line;
+    align-self: center;
 }
 
 /* FIM DA FORMAÇÃO */
