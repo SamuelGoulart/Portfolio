@@ -29,7 +29,11 @@
                            "line card2 ."
                            "line card3 .";
     }
+    #professionalExperience {
+        padding-bottom: 50px;
+    }
     #cards{
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 10px 80vw;
         row-gap: 20px;
         margin-left: 0px;
@@ -42,6 +46,20 @@
         top: -15px;
         left: -155px;
         transform: rotate(90deg);
+    }
+    .square{
+        top: 45px;
+        left: 20px;
+    }
+
+    #square2{
+        left: 20px;
+        top: 180px;
+    }
+
+    #square3{
+        left: 20px;
+        top: 310px;
     }
     .cardPortfolio{
         margin: 15px auto;
@@ -142,7 +160,7 @@
         padding: 20px 0px 30px 0px;
     }
     #formation > div{
-        grid-template-columns: 10px 1fr;
+        grid-template-columns: 15px 1fr;
     }
     .cardFormation{
         width: 86vw;
@@ -153,7 +171,19 @@
     }
     .line{
         width: 320px;
-        left: -144px;
+        left: -143px;
+    }
+    .square{
+        top: 30px;
+        left: -4px;
+    }
+    #square2{
+        top: 135px;
+        left: -4px;
+    }
+    #square3{
+        top: 245px;
+        left: -4px;
     }
     #professionalExperience div {
         margin: auto;
@@ -181,6 +211,17 @@
 @media (max-width: 390px) {
     .line{
         width: 370px;
-        left: -170px;
+        left: -168px;
+    }
+    .square{
+        top: 40px;
+    }
+    #square2{
+        top: 160px;
+        left: -4px;
+    }
+    #square3{
+        top: 285px;
+        left: -4px;
     }
 }
