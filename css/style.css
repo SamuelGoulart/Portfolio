@@ -157,6 +157,11 @@ a {
     transition: 2s;
 }
 
+.activateAdherentIndex{
+    text-decoration: 5px underline #06A763;
+}
+
+
 #skills {
     padding: 20px 30px 30px 30px;
 }
@@ -369,6 +374,7 @@ a {
 #portfolio>div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    overflow-y: hidden;
 }
 
 .cardPortfolio {
