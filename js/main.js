@@ -52,7 +52,29 @@ const animeScroll = () => {
 
 }
 
+const removeTriangle3 = () =>{
+    document.querySelector('#triangle3').classList.remove('displayNone')
+}
+
+const addTriangle3 = () =>{
+    document.querySelector('#triangle3').classList.add('displayNone')
+}
+
+const removeTriangle2 = () =>{
+    document.querySelector('#triangle2').classList.remove('displayNone')
+}
+
+const addTriangle2 = () =>{
+    document.querySelector('#triangle2').classList.add('displayNone')
+}
+
 window.addEventListener('scroll', () => { animeNav(); underlineNav() })
 if (target.length) { window.addEventListener('scroll', animeScroll) }
+
+document.querySelector('#card3').addEventListener('mouseenter', addTriangle3)
+document.querySelector('#card3').addEventListener('mouseleave', removeTriangle3)
+
+document.querySelector('#card2').addEventListener('mouseenter', addTriangle2)
+document.querySelector('#card2').addEventListener('mouseleave', removeTriangle2)
 
 animeScroll()

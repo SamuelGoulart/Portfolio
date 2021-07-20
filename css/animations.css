@@ -1,4 +1,4 @@
-#presentation, .navActivate, .navSocialNetworks, #about, #myPicture {
+#presentation, .navActivate, .navSocialNetworks, #about, #myPicture>img {
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -58,9 +58,9 @@
 
 .flip-container {
     display: inline-block;
-    perspective: 1000px; 
+    perspective: 1000px;
 }
-  
+
 .flipper {
     position: relative;
     min-height: 111px;
@@ -82,12 +82,24 @@
 .back {
     transform: rotateX(180deg);
     background-color: #06A763;
+    border: 1px solid black;
     margin-top: -20px;
     margin-left: 0px;
     box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+    padding-top: 45px;
 }
 
-.back a{
-    color: white;
+.back a {
+    color: black;
+    padding: 13px 10px;
+    margin-top: 25px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
 }
 
+@media (max-width: 540px) {
+    #presentation {
+        animation-name: none;
+    }
+}

@@ -3,11 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth;
-}
-
-body{
-    overflow-x: hidden;
+    scroll-behavior: smooth; 
 }
 
 h1, h2 {
@@ -27,12 +23,14 @@ li{
 }
 
 #imageBackground {
+    width: 98vw;
     height: 450px;
-    margin-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #imageBackground>picture>img {
-    width: 100vw;
+    width: 98vw;
     z-index: -1;
     max-height: 370px;
     position: absolute;
@@ -224,7 +222,7 @@ li{
 #cards{
     display: grid;
     grid-template-columns: 350px 320px 350px;
-    grid-template-rows: 1fr 76px 1fr;
+    grid-template-rows: 111px 76px 1fr;
     grid-template-areas: "card1 . card2"
                          "line line line"
                          ". card3 .";
@@ -325,15 +323,15 @@ li{
 
 #date1{
     top: 70px;
-    left: 120px;
+    margin-left: 120px;
 }
 #date2{
     top: 0px;
-    left: 460px;
+    margin-left: 460px;
 }
 #date3{
     top: 70px;
-    left: 780px;
+    margin-left: 780px;
 }
 
 .circle{
@@ -343,7 +341,7 @@ li{
 /* FIM DA FORMAÇÃO */
 
 #professionalExperience {
-    padding-bottom: 70px;
+    padding: 20px 0px 70px 0px;
 }
 
 #professionalExperience h1 {
@@ -442,7 +440,7 @@ li{
 
 #freeCourses {
     padding: 20px 30px;
-}
+} 
 
 #freeCourses>h1 {
     margin-bottom: 15px;
@@ -476,7 +474,8 @@ li{
 }
 
 footer {
-    width: 100vw;
+    width: 98vw;
+    margin: auto;
     height: 70px;
     display: table;
     background-color: white;
@@ -491,4 +490,8 @@ footer div {
 footer h1 {
     text-align: center;
     font-size: 1rem;
+}
+
+.displayNone{
+    display: none;
 }

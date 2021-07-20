@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 1200px) {
+    *{
+        overflow-x: hidden;
+    }
     .navSocialNetworks {
         display: none;
     }
@@ -54,6 +57,12 @@
         row-gap: 10px;
         margin-left: 0px;
     }
+    .cardFormation {
+        overflow-y: hidden;
+    }
+    .flip-container:hover .flipper {
+        transform: none !important;
+    }
     #card3 {
         margin-left: 0px;
     }
@@ -66,17 +75,17 @@
     #date1{
         grid-area: date1;
         top: 0px;
-        left: 125px;
+        margin-left: 125px;
     }
     #date2{
         grid-area: date2;
         top: 0px;
-        left: 125px;
+        margin-left: 125px;
     }
     #date3{
         grid-area: date3;
         top: 0px;
-        left: 125px;
+        margin-left: 125px;
     }
     .triangle {
         display: none;
@@ -87,11 +96,11 @@
     }
     #square2 {
         left: 20px;
-        top: 201px;
+        top: 215px;
     }
     #square3 {
         left: 20px;
-        top: 360px;
+        top: 395px;
     }
     .cardPortfolio {
         margin: 15px auto;
@@ -172,7 +181,6 @@
     .navActivate {
         top: 92vh;
     }
-
     .generalFormatting {
         width: 95vw;
     }
@@ -203,23 +211,24 @@
         width: 86vw;
         margin-left: 10px !important;
     }
-    .cardFormation>h1 {
+    .cardFormation>h1,
+    .cardFormation > .front > h1 {
         font-size: 1rem;
     }
     .line {
-        width: 430px;
-        left: -198px;
+        width: 462px;
+        left: -213px;
     }
     .square {
         top: 39px;
         left: -4px;
     }
     #square2 {
-        top: 175px;
+        top: 215px;
         left: -4px;
     }
     #square3 {
-        top: 325px;
+        top: 395px;
         left: -4px;
     }
     #professionalExperience div {
@@ -250,25 +259,25 @@
 
 @media (max-width: 390px) {
     .square {
-        top: 40px;
+        top: 50px;
     }
     #square2 {
-        top: 180px;
+        top: 215px;
         left: -4px;
     }
     #square3 {
-        top: 330px;
+        top: 395px;
         left: -4px;
     }
     #date1 {
-        left: 115px;
+        margin-left: 125px;
     }
 
     #date2 {
-        left: 120px;
+        margin-left: 125px;
     }
 
     #date3 {
-        left: 112px;
+        margin-left: 112px;
     }
 }
