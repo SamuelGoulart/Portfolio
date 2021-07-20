@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 h1, h2 {
@@ -15,6 +18,12 @@ h1, h2 {
 a {
     text-decoration: none;
     list-style: none;
+}
+
+li{
+    list-style: none;
+
+    text-decoration: none;
 }
 
 #imageBackground {
@@ -244,7 +253,7 @@ a {
     text-align: center;
 }
 
-.cardFormation > h1{
+.cardFormation > .front > h1{
     font-size: 1.1rem;
 }
 
@@ -324,7 +333,7 @@ a {
 }
 #date3{
     top: 70px;
-    left: 800px;
+    left: 780px;
 }
 
 .circle{

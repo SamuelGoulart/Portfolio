@@ -80,7 +80,7 @@
         </a>
 
     </section>
-    <nav class="navInternalLinks" data-anime="left">
+    <nav class="navInternalLinks">
         <ul>
             <a class="a" href="#imageBackground">
                 <li>Samuel Goulart</li>
@@ -199,22 +199,48 @@
     <section id="formation" class="generalFormatting">
         <h1 data-anime="left">Formação</h1>
         <div id="cards">
-            <div class="cardFormation" id="card1" data-anime="left">
-                <h1>Escola E.E Padre Romeo Mecca</h1>
-                <p>Curso: Ensino médio</p>
+            <div class="flip-container" data-anime="left" >
+                <div class="cardFormation flipper" id="card1">
+                    <div class="front">
+                        <h1>Escola E.E Padre Romeo Mecca</h1>
+                        <p>Curso: Ensino médio</p>
+                    </div>
+                    <div class="back">
+                        <a href="http://" target="_blank">Plano do curso</a>
+                    </div>
+                </div>
             </div>
+            
             <div class="triangle" id="triangle1" data-anime="left"></div>
-            <div class="cardFormation" id="card2" data-anime="left">
-                <h1>Escola SENAI “Professor Vicente Amato”</h1>
-                <p>Curso: Técnico de desenvolvimento de sistemas</p>
-                <p>Carga horária: 1200h</p>
+
+            <div class="flip-container" id="card2" data-anime="left">
+                <div class="cardFormation flipper">
+                    <div class="front" >
+                        <h1>Escola SENAI “Professor Vicente Amato”</h1>
+                        <p>Curso: Técnico de desenvolvimento de sistemas</p>
+                        <p>Carga horária: 1125h</p>
+                    </div>
+                    <div class="back" >
+                        <a href="http://" target="_blank">Plano do curso</a>
+                    </div>
+                </div>
             </div>
+        
             <div class="triangle" id="triangle2" data-anime="left"></div>
-            <div class="cardFormation" id="card3" data-anime="left">
-                <h1>Escola SENAC “Lapa Tito”</h1>
-                <p>Curso: Técnico em informática</p>
-                <p>Carga horária: 1200h</p>
+
+            <div class="flip-container" id="card3" data-anime="left" >
+                <div class="cardFormation flipper" >
+                    <div class="front">
+                        <h1>Escola E.E Padre Romeo Mecca</h1>
+                        <p>Curso: Ensino médio</p>
+                    </div>
+                    <div class="back">
+                        <a href="http://" target="_blank">Plano do curso</a>
+                    </div>
+                </div>
             </div>
+            
+           
             <div class="triangle" id="triangle3" data-anime="left"></div>
             <div class="date" id="date1" data-anime="left">2017 - 2019</div>
             <div class="square" data-anime="left">
@@ -224,24 +250,24 @@
             <div class="square" id="square2" data-anime="left">
                 <div></div>
             </div>
-            <div class="date" id="date3" data-anime="left" >2020 - até agora</div>
+            <div class="date" id="date3" data-anime="left">2020 - até agora</div>
             <div class="square" id="square3" data-anime="left">
                 <div></div>
             </div>
-            <div class="line"  data-anime="left"></div>
+            <div class="line"></div>
         </div>
 
     </section>
     <section id="professionalExperience" class="generalFormatting">
         <h1>Experiência profissional</h1>
-        <div data-anime="top" >
+        <div data-anime="top">
             <p>Em busca do primeiro emprego</p>
         </div>
     </section>
     <section id="portfolio" class="generalFormatting">
         <h1>Portfólio</h1>
         <div>
-            <div class="cardPortfolio"  data-anime="bottom">
+            <div class="cardPortfolio" data-anime="bottom">
                 <h1>iCatalogo-api</h1>
                 <p>O projeto iCatalogo-api é um projeto desenvolvido durante o curso de técnico em desenvolvimento de
                     sistemas, para a aprendizagem da construção de API-REST, sem utilização de frameworks.</p>
@@ -256,7 +282,7 @@
                 <span class="category">PDO</span>
                 <span class="category">MySQL</span>
             </div>
-            <div class="cardPortfolio"  data-anime="bottom">
+            <div class="cardPortfolio" data-anime="bottom">
                 <h1>FastParking-api</h1>
                 <p>O projeto FastParking-api é um projeto, desenvolvido em integração entre as matérias de back-end e
                     front-end  do curso de técnico em desenvolvimento de sistemas.</p>
@@ -275,7 +301,7 @@
                 <span class="category">MySQL</span>
 
             </div>
-            <div class="cardPortfolio"  data-anime="bottom">
+            <div class="cardPortfolio" data-anime="bottom">
                 <h1>Estacionamento</h1>
                 <p>Este projeto, foi desenvolvido para fazer o controle de um estacionamento, usando como banco de dados
                     o LocalStorange do navegador, para guardar as informações.</p>

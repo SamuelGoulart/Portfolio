@@ -1,4 +1,4 @@
-#presentation, .navActivate, .navSocialNetworks, #about {
+#presentation, .navActivate, .navSocialNetworks, #about, #myPicture {
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -46,6 +46,7 @@
 [data-anime="top"] {
     transform: translate3d(0px, -150px, 0);
 }
+
 [data-anime="bottom"] {
     transform: translate3d(0px, 150px, 0);
 }
@@ -54,3 +55,39 @@
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
+
+.flip-container {
+    display: inline-block;
+    perspective: 1000px; 
+}
+  
+.flipper {
+    position: relative;
+    min-height: 111px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flipper {
+    transform: rotateX(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateX(180deg);
+    background-color: #06A763;
+    margin-top: -20px;
+    margin-left: 0px;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
+}
+
+.back a{
+    color: white;
+}
+
