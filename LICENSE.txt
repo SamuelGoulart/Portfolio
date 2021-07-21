@@ -1,0 +1,24 @@
+Este é um software gratuito.
+
+Qualquer pessoa é livre para copiar, modificar, publicar, usar, este software, 
+na forma de código-fonte.
+
+É estritamente proibido modificar integrante e parcialmente, sendo esse parcial maior de 50%, é utilizar dele 
+para entrega de tarefas escolas, colocação no gitHub, ou no currículo como pertencesse a sua autoria.
+
+É obrigatório o reconhecimento do direito autoral no software para o domínio 
+público é privado.
+
+Em jurisdições que reconhecem as leis de direitos autorais, o autor 
+deste software dedica todo e qualquer direito autoral no
+software para o domínio público. Fazemos essa dedicação pelo benefício
+do público em geral e em detrimento de nossos herdeiros e
+sucessores. 
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM QUALQUER TIPO DE GARANTIA,
+EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE
+COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NÃO VIOLAÇÃO.
+EM NENHUMA HIPÓTESE OS AUTORES SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU
+OUTRAS RESPONSABILIDADES, SEJA EM AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA,
+DECORRENTE DE, FORA DE OU EM CONEXÃO COM O SOFTWARE OU O USO OU
+OUTRAS NEGOCIAÇÕES NO SOFTWARE.
