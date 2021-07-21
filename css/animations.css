@@ -1,3 +1,6 @@
+/* Aminação faz a seção de apresentação, 
+sobre min e nav lateral direito, 
+aparecer, suavemente, quando a página abrir  */
 #presentation, .navActivate, .navSocialNetworks, #about, #myPicture>img {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -14,7 +17,11 @@
     }
 }
 
-#information, #titleInformation, #about h1, #about p, #about a {
+#information, 
+#titleInformation, 
+#about h1, 
+#about p, 
+#about a {
     animation: move 1.5s;
     animation-delay: 250ms;
 }
@@ -30,6 +37,8 @@
     }
 }
 
+/* Aminação de scroll, 
+para que os elementos, apareçam */
 [data-anime] {
     opacity: 0;
     transition: 2s;
@@ -55,6 +64,9 @@
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
+
+/* Aminação de Flip Cards, 
+no card da formação do SENAI E SENAC */
 
 .flip-container {
     display: inline-block;
@@ -98,8 +110,14 @@
     background-color: white;
 }
 
+@media (max-width: 850px) {
+    [data-anime="right"] {
+        transform: translate3d(-150px, 0, 0);
+    } 
+}
 @media (max-width: 540px) {
     #presentation {
         animation-name: none;
     }
+    
 }

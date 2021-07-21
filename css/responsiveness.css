@@ -5,13 +5,24 @@
 }
 
 @media (max-width: 1200px) {
-    *{
+    /*  Configurações globais  */
+    * {
         overflow-x: hidden;
     }
+    .generalFormatting {
+        width: 90vw;
+    }
+    /* Seção de apresentação */
+    #myPicture>img {
+        width: 25vw;
+    }
+    /* Nav das Redes Socias */
+    /* Nav lateral Fixo na esquerda */
     .navSocialNetworks {
         display: none;
     }
-    .navSocialNetworksPresentation{
+    /* Nav dentro na apresentação com as redes sociais */
+    .navSocialNetworksPresentation {
         display: block;
         width: 250px;
         padding: 10px;
@@ -19,14 +30,11 @@
         background-color: white;
         box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
         margin: 15px 1px 1px 1px;
-
     }
-    .navSocialNetworksPresentation a{
+    .navSocialNetworksPresentation a {
         margin-left: 20px;
     }
-    .generalFormatting {
-        width: 90vw;
-    }
+    /* Formação do nav fixed na horizontal */
     .navInternalLinks {
         width: 86vw;
         left: calc(50% - 43vw);
@@ -34,25 +42,15 @@
     .navInternalLinks>ul a:nth-child(1) {
         display: none;
     }
-    #myPicture>img {
-        width: 25vw;
-    }
+    /* Seção da Formação*/
     #formation>div {
         margin-top: 30px;
         display: grid;
         grid-template-columns: 60px 1fr;
-        grid-template-areas: "line card1 ." 
-                             "line date1 ."
-                             "line card2 ."
-                             "line date2 ." 
-                             "line card3 ."
-                             "line date3 .";
-    }
-    #professionalExperience {
-        padding-bottom: 50px;
+        grid-template-areas: "line card1 ." "line date1 ." "line card2 ." "line date2 ." "line card3 ." "line date3 .";
     }
     #cards {
-        grid-template-rows: 1fr 20px 1fr 20px 1fr 20px ;
+        grid-template-rows: 1fr 20px 1fr 20px 1fr 20px;
         grid-template-columns: 10px 80vw;
         row-gap: 10px;
         margin-left: 0px;
@@ -72,17 +70,17 @@
         left: -198px;
         transform: rotate(90deg);
     }
-    #date1{
+    #date1 {
         grid-area: date1;
         top: 0px;
         margin-left: 125px;
     }
-    #date2{
+    #date2 {
         grid-area: date2;
         top: 0px;
         margin-left: 125px;
     }
-    #date3{
+    #date3 {
         grid-area: date3;
         top: 0px;
         margin-left: 125px;
@@ -105,6 +103,11 @@
     .cardPortfolio {
         margin: 15px auto;
     }
+    /* Seção da Experiência profissional */
+    #professionalExperience {
+        padding-bottom: 50px;
+    }
+    /* Seção dos cursos livres */
     .cardFreeCourses {
         grid-template-columns: 68px 3fr;
         padding-left: 5px;
@@ -117,16 +120,19 @@
 }
 
 @media (max-width: 870px) {
+    /* Seção dos cursos livres */
     .cardFreeCourses {
         width: 70vw;
     }
 }
 
 @media (max-width: 720px) {
-    .navSocialNetworksPresentation{
+    /* Nav dentro na apresentação com as redes sociais */
+    .navSocialNetworksPresentation {
         margin-top: 15px;
         margin-left: calc(43vw - 125px);
     }
+    /* Seção de apresentação */
     #presentation {
         grid-template-columns: repeat(auto-fit, minmax(340px, max-content));
         grid-template-areas: none;
@@ -136,11 +142,6 @@
         grid-area: inherit;
         margin-left: -50px;
     }
-    .navInternalLinks {
-        width: 93vw;
-        left: calc(50% - 48vw);
-        font-size: 0.9rem;
-    }
     #myPicture>img {
         position: absolute;
         top: 75px;
@@ -148,6 +149,13 @@
         width: 150px;
         border-radius: 50%;
     }
+    /* Formação do nav fixed na horizontal */
+    .navInternalLinks {
+        width: 93vw;
+        left: calc(50% - 48vw);
+        font-size: 0.9rem;
+    }
+    /* Seção dos cursos livres */
     #freeCourses {
         padding: 20px 10px;
     }
@@ -157,6 +165,7 @@
 }
 
 @media (max-width: 540px) {
+    /*  Configurações globais  */
     body {
         font-size: 0.9rem;
     }
@@ -166,9 +175,14 @@
     .generalFormatting>h1 {
         text-align: center;
     }
+    .generalFormatting {
+        width: 95vw;
+    }
+    /* Seção da imagem de background */
     #imageBackground {
         height: 450px;
     }
+    /* Seção sobre min */
     #about {
         padding: 20px 6px 30px 8px;
         text-align: center;
@@ -178,11 +192,9 @@
         text-transform: uppercase;
         font-weight: bolder;
     }
+    /* Formação do nav fixed na horizontal */
     .navActivate {
         top: 92vh;
-    }
-    .generalFormatting {
-        width: 95vw;
     }
     .navInternalLinks {
         padding: 15px 5px;
@@ -192,6 +204,7 @@
     .navInternalLinks>ul a:nth-child(7) {
         display: none;
     }
+    /* Seção da Habilidades Profissionais*/
     #skills {
         padding: 20px 0px 30px 0px;
     }
@@ -201,6 +214,7 @@
     .progress-bar {
         width: 90%;
     }
+    /* Seção da Formação*/
     #formation {
         padding: 20px 0px 30px 0px;
     }
@@ -211,8 +225,10 @@
         width: 86vw;
         margin-left: 10px !important;
     }
-    .cardFormation>h1,
-    .cardFormation > .front > h1 {
+    #card2 {
+        margin-left: 0px;
+    }
+    .cardFormation>h1, .cardFormation>.front>h1 {
         font-size: 1rem;
     }
     .line {
@@ -231,9 +247,11 @@
         top: 395px;
         left: -4px;
     }
+    /* Seção da Experiência profissional */
     #professionalExperience div {
         margin: auto;
     }
+    /* Seção do Portfólio */
     #portfolio {
         padding: 20px 0px 30px 0px;
     }
@@ -243,6 +261,7 @@
     #spanRepositorio {
         margin-top: 2px;
     }
+    /* Seção dos cursos livres */
     #freeCourses {
         padding: 20px 0px;
     }
@@ -252,12 +271,14 @@
     .cardFreeCourses {
         width: 89vw;
     }
-    footer{
+    /* Seção do footer */
+    footer {
         margin-bottom: 60px;
     }
 }
 
 @media (max-width: 390px) {
+    /* Seção da Formação*/
     .square {
         top: 50px;
     }
@@ -272,11 +293,9 @@
     #date1 {
         margin-left: 125px;
     }
-
     #date2 {
         margin-left: 125px;
     }
-
     #date3 {
         margin-left: 112px;
     }

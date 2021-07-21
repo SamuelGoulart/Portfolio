@@ -8,7 +8,7 @@ const animeNav = () => {
 
 const underlineNav = () => {
     const windowTop = window.pageYOffset;
-    const a = document.querySelectorAll('.navInternalLinks > ul > a')
+    const a = document.querySelectorAll('.navInternalLinks a')
     if (windowTop < 700) {
         a[3].classList.remove('activateAdherentIndex')
     }
@@ -49,7 +49,6 @@ const animeScroll = () => {
             element.classList.remove('animate')
         }
     })
-
 }
 
 const removeTriangle3 = () =>{
