@@ -39,7 +39,7 @@
         width: 86vw;
         left: calc(50% - 43vw);
     }
-    .navInternalLinks>ul a:nth-child(1) {
+    .navInternalLinks a:nth-child(1) {
         display: none;
     }
     /* Seção da Formação*/
@@ -47,7 +47,12 @@
         margin-top: 30px;
         display: grid;
         grid-template-columns: 60px 1fr;
-        grid-template-areas: "line card1 ." "line date1 ." "line card2 ." "line date2 ." "line card3 ." "line date3 .";
+        grid-template-areas: "line card1 ." 
+                             "line date1 ." 
+                             "line card2 ." 
+                             "line date2 ." 
+                             "line card3 ." 
+                             "line date3 .";
     }
     #cards {
         grid-template-rows: 1fr 20px 1fr 20px 1fr 20px;
@@ -172,7 +177,7 @@
     h1, h2 {
         font-size: 1.2rem;
     }
-    .generalFormatting>h1 {
+    .generalFormatting>h2 {
         text-align: center;
     }
     .generalFormatting {
@@ -201,7 +206,7 @@
         left: calc(50% - 47.5vw);
         font-size: 0.9rem;
     }
-    .navInternalLinks>ul a:nth-child(7) {
+    .navInternalLinks a:nth-child(7) {
         display: none;
     }
     /* Seção da Habilidades Profissionais*/
@@ -228,7 +233,7 @@
     #card2 {
         margin-left: 0px;
     }
-    .cardFormation>h1, .cardFormation>.front>h1 {
+    .cardFormation>h2, .cardFormation>.front>h2 {
         font-size: 1rem;
     }
     .line {

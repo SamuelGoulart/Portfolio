@@ -84,7 +84,8 @@ li {
     padding: 23px 30px 23px 60px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: "myPicture titleInformation titleInformation" "myPicture  information information";
+    grid-template-areas: "myPicture titleInformation titleInformation" 
+                         "myPicture  information information";
 }
 
 #myPicture {
