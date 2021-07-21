@@ -5,11 +5,11 @@ Tentei tornar o site o mais responsivo possível. <br>
 
 <div>
  Acesse o meu portfólio,
-<a href="https://samuelgoulart.github.io/Portfolio/index.html">Clique aqui</a>
+<a href="https://samuelgoulart.github.io/Portfolio/index.html" target="black" >Clique aqui</a>
 </div>
 <div>
  Acesse o protótipo do portfólio,
-<a href="https://samuelgoulart.github.io/Portfolio/index.html">Clique aqui</a>
+<a href="https://samuelgoulart.github.io/Portfolio/index.html" target="black">Clique aqui</a>
 </div>
 
 ## 🧪 Tecnologias utilizadas
