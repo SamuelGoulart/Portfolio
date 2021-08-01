@@ -4,12 +4,12 @@ Oi! Sou Samuel Goulart. Este é o site do meu portfólio.<br>
 Tentei tornar o site o mais responsivo possível. <br>
 
 <div>
- Acesse o meu portfólio,
-<a href="https://samuelgoulart.github.io/Portfolio/index.html">Clique aqui</a>
+ Acesse o projeto,
+<a href="https://samuelgoulart.github.io/Portfolio/index.html" target="black" >Clique aqui</a>
 </div>
 <div>
- Acesse o protótipo do portfólio,
-<a href="https://samuelgoulart.github.io/Portfolio/index.html">Clique aqui</a>
+ Acesse o protótipo,
+<a href="https://www.figma.com/file/ijHaIGGtSe22GwPSg7rQox/Portf%C3%B3lio?node-id=0%3A1" target="black">Clique aqui</a>
 </div>
 
 ## 🧪 Tecnologias utilizadas
