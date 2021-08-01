@@ -49,10 +49,10 @@
         grid-template-columns: 60px 1fr;
         grid-template-areas: "line card1 ." 
                              "line date1 ." 
-                             "line card2 ." 
-                             "line date2 ." 
                              "line card3 ." 
-                             "line date3 .";
+                             "line date3 ." 
+                             "line card2 ." 
+                             "line date2 .";
     }
     #cards {
         grid-template-rows: 1fr 20px 1fr 20px 1fr 20px;
@@ -81,12 +81,12 @@
         margin-left: 125px;
     }
     #date2 {
-        grid-area: date2;
+        grid-area: date3;
         top: 0px;
         margin-left: 125px;
     }
     #date3 {
-        grid-area: date3;
+        grid-area: date2;
         top: 0px;
         margin-left: 125px;
     }
