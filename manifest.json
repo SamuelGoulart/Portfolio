@@ -3,12 +3,12 @@
     "name": "Portfólio: Samuel Goulart",
     "icons": [
         {
-            "src": "./img/icon_learning.svg",
-            "type": "image/svg",
-            "sizes": "192x192"
+            "src": "./img/icon_portfolio_256px.png",
+            "type": "image/png",
+            "sizes": "256x256"
         },
         {
-            "src": "./img/icon_learning.svg",
+            "src": "./img/icon_portfolio_512px.png",
             "type": "image/png",
             "sizes": "512x512"
         }
@@ -19,17 +19,5 @@
     "scope": "/",
     "theme_color": "#06A763",
     
-    "description": "Mostrar meu portfólio",
-    "screenshots": [
-        {
-            "src": "/images/screenshot1.png",
-            "type": "image/png",
-            "sizes": "540x720"
-        },
-        {
-            "src": "/images/screenshot2.jpg",
-            "type": "image/jpg",
-            "sizes": "540x720"
-        }
-    ]
+    "description": "Mostrar meu portfólio"
 }
