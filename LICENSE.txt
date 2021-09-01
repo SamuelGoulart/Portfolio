@@ -6,8 +6,7 @@ na forma de código-fonte.
 É estritamente proibido modificar integrante e parcialmente, sendo esse parcial maior de 50%, é utilizar dele 
 para entrega de tarefas escolas, colocação no gitHub, ou no currículo como pertencesse a sua autoria.
 
-É obrigatório o reconhecimento do direito autoral no software para o domínio 
-público é privado.
+É obrigatório o reconhecimento do direito autoral no software para o domínio público é privado.
 
 Em jurisdições que reconhecem as leis de direitos autorais, o autor 
 deste software dedica todo e qualquer direito autoral no
