@@ -18,6 +18,6 @@
     "display": "standalone",
     "scope": "/",
     "theme_color": "#06A763",
-    
+    "orientation": "any",
     "description": "Mostrar meu portfólio"
 }
